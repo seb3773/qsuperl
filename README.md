@@ -33,6 +33,9 @@ qsuperl -e 'Control_L|Super_L|Z' -w  # Enable window tiler
 qsuperl -e 'Control_L|Super_L|Z' -x /usr/bin/htop -c /usr/bin/logout -k  # Map Super_L, enable window tiler, intercept Ctrl+Shift+Esc and Ctrl+Alt+Del, launch with kstart
 ```
 
+
+Building: gcc -DARCH_X86_64 -O2 -Wl,-O1,-z,norelro,--gc-sections,--build-id=none,--as-needed,--icf=all,--hash-style=gnu,--discard-all,--strip-all -fstrict-aliasing -flto -fuse-ld=gold -ffunction-sections -fdata-sections -fno-stack-protector -fno-ident -fno-builtin -fno-plt  -fno-asynchronous-unwind-tables -fno-unwind-tables -fno-exceptions -fomit-frame-pointer -fvisibility=hidden -fno-math-errno -fmerge-all-constants $(pkg-config --cflags xtst x11) qsuperl.c -s -o qsuperl $(pkg-config --libs xtst x11) -pthread -lXinerama
+
 ## Resources
 - [Q4OS Forum: Menu Shortcuts](https://www.q4os.org/forum/viewtopic.php?id=5550)
 - [Q4OS Forum: Window Tiler](https://www.q4os.org/forum/viewtopic.php?id=5551)
