@@ -30,7 +30,7 @@ Example commands:
 qsuperl -e 'Control_L|Super_L|Z'  # Map Super_L to menu shortcut
 qsuperl -e 'Control_L|Super_L|Z' -x /usr/bin/htop  # Super_L + Ctrl+Shift+Esc
 qsuperl -e 'Control_L|Super_L|Z' -w  # Enable window tiler
-qsuperl -e 'Control_L|Super_L|Z' -x /usr/bin/htop -c /usr/bin/logout -k  # Map Super_L, enable window tiler, intercept Ctrl+Shift+Esc and Ctrl+Alt+Del, launch with kstart
+qsuperl -e 'Control_L|Super_L|Z' -w -x /usr/bin/htop -c /usr/bin/logout -k  # Map Super_L, enable window tiler, intercept Ctrl+Shift+Esc and Ctrl+Alt+Del, launch with kstart
 ```
 
 
