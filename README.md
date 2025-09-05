@@ -1,6 +1,6 @@
 # qsuperl
 
-A lightweight, specialized fork of [xcape](https://github.com/alols/xcape) for Q4OS TDE, enhancing the Super_L (Windows) key to mimic Windows 10 functionality. Maps Super_L to custom key combinations (e.g., `Ctrl_L+Super_L+Z`) for menu shortcuts, allowing single Super_L presses to open the menu (set Super_L as a dead key in TDE) and Super_L+<key> combinations for other actions (e.g., `Super_L+R` to run programs). Integrates [theasmitkid's window tiler](https://www.q4os.org/forum/viewtopic.php?id=5551) for Super_L-based window tiling. Designed for TDE but compatible with other X11 desktop environments. No external hotkey daemons required.
+A lightweight, specialized fork of [xcape](https://github.com/alols/xcape) for Q4OS TDE, enhancing the Super_L (Windows) key to mimic Windows 10 functionality. Maps Super_L to custom key combinations (e.g., `Ctrl_L+Super_L+Z`) for menu shortcuts, allowing single Super_L presses to open the menu (set Super_L as a dead key in TDE) and Super_L+<key> combinations for other actions (e.g., `Super_L+R` to run programs). Integrates [theasmitkid's window tiler](https://www.q4os.org/forum/viewtopic.php?id=5551 - now named xakar, check it here: https://codeberg.org/Setuzuna/Xakar ) for Super_L-based window tiling. Designed for TDE but compatible with other X11 desktop environments. No external hotkey daemons required.
 
 ## Features
 - Custom Super_L key mappings (e.g., `Super_L` to `Ctrl_L+Super_L+Z` for menu shortcuts)
